@@ -12,23 +12,10 @@ function mincost(arr)
 	return mincost;
 }
 function twoSmallest(arr) {
-  if (arr.length < 2) {
-    throw new Error("Array must have at least two elements");
-  }
-
-  let min1 = arr[0];
-  let min2 = arr[1];
-
-  for (let i = 1; i < arr.length; i++) {
-    const num = arr[i];
-
-    if (num !== min1) {
-      min2 = num;
-      break;
-    }
-  }
-
-  return [min1, min2];
+    arr.sort(a,b) => a-b;
+	let min1 = arr[0];
+	let min2 = arr[1];
+	return [min1,min2];
 }
 
 
